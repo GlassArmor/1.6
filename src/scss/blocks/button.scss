@@ -1,0 +1,66 @@
+.button {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border: none;
+  transition: all 0.5s;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  &--call {
+    background: url("./../img/call.svg") no-repeat 50% 50%;
+  }
+  &--chat {
+    background: url("./../img/chat.svg") no-repeat 50% 50%;
+  }
+  &--close {
+    background: url("./../img/close.svg") no-repeat 50% 50%;
+  }
+  &--burger {
+    background: url("./../img/burger.svg") no-repeat 50% 50%;
+  }
+  &--search {
+    background: url("./../img/search.svg") no-repeat 50% 50%;
+  }
+  &--repair {
+    background: url("./../img/repair.svg") no-repeat 50% 50%;
+  }
+  &--profile {
+    background: url("./../img/profile.svg") no-repeat 50% 50%;
+  }
+  &--checkstatus {
+    background: url("./../img/checkstatus.svg") no-repeat 50% 50%;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &:hover {
+    border-color: $color-highlight-button;
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    border-color: $color-highlight-button;
+    transform: scale(1.2);
+    outline: none;
+  }
+
+  @media (min-width: 1440px)  {
+    &--hidden {
+      display: none;
+    }
+
+    &__text {
+      display: inline-block;
+      padding-right: 48px;
+    }
+
+    &--repair, &--checkstatus {
+      width: auto;
+      border: none;
+      background-position: right;
+      border-radius: 6px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  border-top: 1px solid $color-header-border;
+  padding: 8px;
+
+  &__text {
+    text-align: center;
+    font-family: $font-family;
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+    color: $text-color;
+    max-width: 288px;
+    padding: 8px;
+    margin: 0 auto;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__text {
+      text-align: left;
+      margin: 0;
+    }
+
+    &__text:last-child {
+      text-align: right;
+    }
+  }
+}

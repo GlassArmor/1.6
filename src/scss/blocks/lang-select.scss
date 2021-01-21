@@ -1,0 +1,24 @@
+.lang-select {
+  display: flex;
+
+  &__item {
+    font-family: $font-family;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    border: none;
+    background-color: $color-white;
+    text-transform: uppercase;
+    margin-right: 7px;
+    transition: all 0.5s;
+  }
+
+  &__item-selected {
+    color: $text-color;
+  }
+
+  &__item:hover, &__item:focus {
+    color: $text-color;
+    outline: none;
+    transform: scale(1.1);
+  }
+}

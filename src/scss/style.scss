@@ -1,17 +1,27 @@
-$bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
+* {
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+@import 'fonts.scss';
+@import 'variables.scss';
+
+@import './blocks/button.scss';
+@import './blocks/header.scss';
+@import './blocks/title.scss';
+@import './blocks/navigation.scss';
+@import './blocks/article.scss';
+@import './blocks/cards.scss';
+@import './blocks/brands.scss';
+@import './blocks/techs.scss';
+@import './blocks/services.scss';
+@import './blocks/info.scss';
+@import './blocks/footer.scss';
+@import './blocks/burger.scss';
+@import './blocks/lang-select.scss';
+@import './blocks/modal.scss';
+@import './blocks/wrapper.scss';
+@import './blocks/blured.scss';
+@import './blocks/swiper-bundle.scss';

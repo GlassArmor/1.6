@@ -1,0 +1,46 @@
+.info {
+  font-family: $font-family;
+  color: $text-dark;
+  padding: 16px;
+  max-width: 452px;
+  &__text {
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+  }
+  &__link {
+    width: 192px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    color: $text-dark;
+    font-weight: 500;
+    margin-top: 16px;
+    //padding-right: 16px;
+    //background: url('./../img/Line.svg') 100% 50% no-repeat;
+  }
+
+  &__link::after {
+    position: absolute;
+    right: 56px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 12px;
+    background: url('./../img/Line.svg') 50% 50% no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    & {
+      padding: 24px;
+    }
+    &__link {
+      width: 320px;
+    }
+    &__link::after {
+      right: 0px;
+    }
+  }
+}

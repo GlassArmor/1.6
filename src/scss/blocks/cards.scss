@@ -1,0 +1,39 @@
+.cards {
+  font-family: $font-family;
+  padding-bottom: 32px;
+
+  &__header {
+    min-height: 56px;
+    background-image: linear-gradient(to right, $color-bg, $color-white);
+    padding: 16px;
+    border-top: 1px solid $color-header-border;
+  }
+  &__title {
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    text-transform: uppercase;
+    color: $text-color;
+    font-weight: normal;
+  }
+  &__showmore {
+    font-family: $font-family;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    color: $text-dark;
+    font-weight: 500;
+    display: none;
+    padding-left: 32px;
+    background: transparent url('./../img/expand.svg') no-repeat 4px 50%;
+    border: none;
+    margin-left: 24px;
+  }
+  &__showmore--reversed {
+    background: transparent url('./../img/reversed.svg') no-repeat 4px 50%;
+  }
+
+  @media (min-width: 768px) {
+    &__showmore {
+      display: block;
+    }
+  }
+}

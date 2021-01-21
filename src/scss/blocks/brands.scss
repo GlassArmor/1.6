@@ -1,0 +1,69 @@
+.brands {
+  padding: 24px 32px;
+  display: block;
+  list-style: none;
+  max-width: 1120px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    height: 72px;
+    border: 1px solid $color-gray;
+    border-radius: 6px;
+    background-color: $color-white;
+    margin: 8px;
+  }
+
+  &__logo {
+    max-height: 44px;
+    max-width: 128px;
+    margin: auto 0;
+    margin-left: 16px;
+  }
+
+  &__button {
+    display:block;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    margin: 16px;
+    background: url('./../img/go.svg') no-repeat;
+  }
+
+  @media (min-width: 768px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 24px 12px;
+        margin: 0 auto;
+        height: 205px;
+        overflow: hidden;
+      }
+
+      &__wrapper {
+        width: 33%;
+      }
+
+      &__item {
+        min-width: 224px;
+        width: 90%;
+        margin: 8px 12px;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      & {
+        width: 1120px;
+      }
+
+      &__wrapper {
+        width: auto;
+      }
+
+      &__item {
+        width: 240px;
+        margin: 8px 16px;
+      }
+    }
+}
