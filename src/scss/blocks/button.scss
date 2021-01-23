@@ -52,6 +52,10 @@
     }
 
     &__text {
+      font-family: $font-family;
+      font-size: $font-size-m;
+      line-height: $line-height-m;
+      color: $text-dark;
       display: inline-block;
       padding-right: 48px;
     }

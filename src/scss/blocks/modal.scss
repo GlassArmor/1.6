@@ -12,6 +12,7 @@
   padding: 16px;
   box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
   transition: all 0.5s;
+  z-index: 12;
 
   &__input  {
     width: 100%;

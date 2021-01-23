@@ -1,15 +1,15 @@
 import Swiper,  {Pagination} from 'swiper';
 Swiper.use([Pagination]);
 
-let swiperContainers = document.querySelectorAll('.to_be_swiper');
-let swiperWrappers = document.querySelectorAll('.to_be_swiper_wrapper');
+let swiperContainers = document.querySelectorAll('.swiper');
+let swiperWrappers = document.querySelectorAll('.swiper__wrapper');
 let pagination = document.querySelectorAll('.swiper-pagination');
 let swiperItems = [];
 let swiper = [];
 let swiperChecker = 0;
 
 for (let i = 0; i < swiperContainers.length; i++) {
-  swiperItems[i] = swiperWrappers[i].querySelectorAll('.to_be_swiper_slide');
+  swiperItems[i] = swiperWrappers[i].querySelectorAll('.swiper__slide');
 }
 
 console.log(swiperItems);
@@ -33,7 +33,7 @@ function checkSwiper() {
        clickable: true,
      },
      loop: true,
-     loopedSlides: 11,
+     loopedSlides: 5,
      centeredSlides: true,
      width: 256
    });

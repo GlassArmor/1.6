@@ -32,12 +32,12 @@
     background: url('./../img/go.svg') no-repeat;
   }
 
+
   @media (min-width: 768px) {
       & {
         display: flex;
         flex-wrap: wrap;
         padding: 24px 12px;
-        margin: 0 auto;
         height: 205px;
         overflow: hidden;
       }
@@ -48,7 +48,7 @@
 
       &__item {
         min-width: 224px;
-        width: 90%;
+        width: auto;
         margin: 8px 12px;
       }
     }

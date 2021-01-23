@@ -1,14 +1,20 @@
 .wrapper {
 
   background-color: $color-bg;
-  transition: all 0.5s;
 
-  &__content {
+  &__inner {
     max-width: 1120px;
     margin: 0 auto;
   }
 
   @media (min-width: 1440px) {
-    margin-left: 320px;
+    &__inner {
+      margin-left: 320px;
+    }
+    &__outer {
+      margin: 0 auto;
+      max-width: 1440px;
+      position: relative;
+    }
   }
 }
