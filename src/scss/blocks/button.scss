@@ -2,7 +2,6 @@
   display: block;
   width: 42px;
   height: 42px;
-  border: none;
   transition: all 0.5s;
   border: 2px solid transparent;
   border-radius: 50%;
@@ -37,12 +36,12 @@
 
   &:hover {
     border-color: $color-highlight-button;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   &:focus {
     border-color: $color-highlight-button;
-    transform: scale(1.2);
+    transform: scale(1.1);
     outline: none;
   }
 
@@ -66,5 +65,6 @@
       background-position: right;
       border-radius: 6px;
     }
+
   }
 }

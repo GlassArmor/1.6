@@ -3,12 +3,12 @@
   background-color: $color-bg;
 
   &__inner {
-    max-width: 1120px;
     margin: 0 auto;
   }
 
   @media (min-width: 1440px) {
     &__inner {
+      width: 1120px;
       margin-left: 320px;
     }
     &__outer {

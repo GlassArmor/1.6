@@ -2,7 +2,6 @@
   padding: 24px 32px;
   display: block;
   list-style: none;
-  max-width: 1120px;
 
   &__item {
     display: flex;
@@ -53,17 +52,20 @@
     }
 
     @media (min-width: 1120px) {
-      & {
-        width: 1120px;
-      }
 
       &__wrapper {
-        width: auto;
+        width: 25%;
       }
 
       &__item {
-        width: 240px;
+        min-width: 240px;
+        width: 90%;
         margin: 8px 16px;
+      }
+    }
+    @media (min-width: 1440px) {
+      & {
+        width: 1120px;
       }
     }
 }

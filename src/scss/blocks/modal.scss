@@ -57,12 +57,16 @@
 
   @media (min-width: 1440px) {
     &__title {
+      position: relative;
       display: flex;
       justify-content: flex-start;
-      transform: translateX(-38px);
+      //transform: translateX(-38px);
     }
-    &__close {
-      transform: translate(-48px, 20px);
+    &__close, &__close:hover, &__close:focus, &__close:active {
+      position: absolute;
+      top: 20px;
+      left: -78px;
     }
+
   }
 }

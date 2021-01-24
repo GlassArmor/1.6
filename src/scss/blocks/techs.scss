@@ -54,16 +54,14 @@
     }
 
     @media (min-width: 1120px) {
-      & {
-        width: 1120px;
-      }
 
       &__wrapper {
-        width: auto;
+        width: 25%;
       }
 
       &__item {
-        width: 240px;
+        min-width: 240px;
+        width: 90%;
         margin: 8px 16px;
       }
     }
